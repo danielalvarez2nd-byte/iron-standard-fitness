@@ -19,6 +19,7 @@ iron-standard-fitness/
 |-- index.html
 |-- privacy.html
 |-- script.js
+|-- start.html
 |-- styles.css
 |-- terms.html
 `-- README.md
@@ -40,6 +41,8 @@ iron-standard-fitness/
 6. Review `privacy.html` and `terms.html` with a qualified professional before relying on
    them for a commercial launch.
 7. Replace the example support email in the footer when you have the real inbox ready.
+8. Use `start.html` as a short link-in-bio page for Instagram, TikTok, Facebook, and QR
+   flyers. It points to the quiz, top offer, starter offer, and Gumroad storefront.
 
 ## Deploy Free With GitHub Pages
 
