@@ -61,17 +61,17 @@ h3 {
 h1 {
   max-width: 900px;
   margin-bottom: 1.25rem;
-  font-size: clamp(2.65rem, 10vw, 5.8rem);
+  font-size: 2.65rem;
   font-weight: 900;
-  letter-spacing: -0.075em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
 h2 {
   margin-bottom: 1rem;
-  font-size: clamp(2rem, 7vw, 3.5rem);
+  font-size: 2rem;
   font-weight: 800;
-  letter-spacing: -0.055em;
+  letter-spacing: 0;
 }
 
 h3 {
@@ -241,7 +241,7 @@ p {
   max-width: 660px;
   margin-bottom: 2rem;
   color: var(--color-text-muted);
-  font-size: clamp(1.12rem, 3.6vw, 1.42rem);
+  font-size: 1.12rem;
 }
 
 .hero-note {
@@ -562,6 +562,32 @@ details p {
   color: var(--color-text-muted);
 }
 
+.legal-page h1 {
+  max-width: 720px;
+  font-size: 2.35rem;
+}
+
+.legal-page h2 {
+  margin-top: 2.4rem;
+  font-size: 1.35rem;
+}
+
+.legal-content p {
+  color: var(--color-text-muted);
+}
+
+.legal-content a {
+  color: var(--color-accent-bright);
+  font-weight: 800;
+}
+
+.legal-updated {
+  margin-bottom: 2rem;
+  color: var(--color-steel);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
 .site-footer {
   padding: 4rem 0 1.5rem;
   border-top: 1px solid var(--color-border);
@@ -645,6 +671,18 @@ details p {
     padding: 7rem 0;
   }
 
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  .hero-copy {
+    font-size: 1.32rem;
+  }
+
   .menu-toggle {
     display: none;
   }
@@ -680,6 +718,20 @@ details p {
   .footer-bottom {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1100px) {
+  h1 {
+    font-size: 5.8rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  .legal-page h1 {
+    font-size: 3.4rem;
   }
 }
 

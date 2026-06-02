@@ -17,8 +17,10 @@ iron-standard-fitness/
 |   `-- product-transformation.svg
 |-- SELLER_SETUP.md
 |-- index.html
+|-- privacy.html
 |-- script.js
 |-- styles.css
+|-- terms.html
 `-- README.md
 ```
 
@@ -28,14 +30,16 @@ iron-standard-fitness/
    update the two image paths in `index.html`.
 2. The free Tally quiz embed is configured in `index.html`. Quiz responses appear in the
    Tally dashboard.
-3. The four published Gumroad product URLs are configured in `STORE_CONFIG` in
-   `script.js`. Gumroad captures the buyer's checkout email and delivers the paid PDF.
+3. The four published Gumroad product URLs are set directly on the product buttons in
+   `index.html` and mirrored in `STORE_CONFIG` in `script.js`. Gumroad captures the
+   buyer's checkout email and delivers the paid PDF.
 4. If you add another product later, use the same `STORE_CONFIG` pattern. A product
    button remains disabled with a **Coming Soon** label until its matching URL exists.
 5. Replace the placeholder testimonials with real quotes only after getting each client's
    permission.
-6. Replace the example support email, social profile links, privacy policy link, and terms
-   link in the footer.
+6. Review `privacy.html` and `terms.html` with a qualified professional before relying on
+   them for a commercial launch.
+7. Replace the example support email in the footer when you have the real inbox ready.
 
 ## Deploy Free With GitHub Pages
 

@@ -38,14 +38,18 @@ window.addEventListener("resize", () => {
   }
 });
 
-currentYear.textContent = new Date().getFullYear();
+if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
+}
 
 productButtons.forEach((button) => {
   const productUrl = STORE_CONFIG[button.dataset.product];
 
   if (productUrl) {
     button.href = productUrl;
-    button.textContent = "Buy Now";
+    if (!button.textContent.trim() || button.textContent === "Coming Soon") {
+      button.textContent = "Buy Now";
+    }
     button.target = "_blank";
     button.rel = "noopener";
     return;
@@ -65,5 +69,7 @@ window.addEventListener("message", (event) => {
     return;
   }
 
-  quizSuccess.hidden = false;
+  if (quizSuccess) {
+    quizSuccess.hidden = false;
+  }
 });
