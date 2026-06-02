@@ -13,9 +13,12 @@ iron-standard-fitness/
 |   |-- iron-standard-logo.svg
 |   |-- product-club.svg
 |   |-- product-reset.svg
+|   |-- social-preview.png
 |   |-- product-toolkit.svg
 |   `-- product-transformation.svg
 |-- SELLER_SETUP.md
+|-- robots.txt
+|-- sitemap.xml
 |-- index.html
 |-- privacy.html
 |-- script.js
@@ -43,6 +46,8 @@ iron-standard-fitness/
 7. Replace the example support email in the footer when you have the real inbox ready.
 8. Use `start.html` as a short link-in-bio page for Instagram, TikTok, Facebook, and QR
    flyers. It points to the quiz, top offer, starter offer, and Gumroad storefront.
+9. `sitemap.xml`, `robots.txt`, and the Open Graph/Twitter metadata help search engines
+   and social platforms understand and preview the site.
 
 ## Deploy Free With GitHub Pages
 
