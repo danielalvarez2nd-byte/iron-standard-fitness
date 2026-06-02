@@ -10,7 +10,12 @@ build tools, or backend services.
 iron-standard-fitness/
 |-- assets/
 |   |-- hero-grid.svg
-|   `-- iron-standard-logo.svg
+|   |-- iron-standard-logo.svg
+|   |-- product-club.svg
+|   |-- product-reset.svg
+|   |-- product-toolkit.svg
+|   `-- product-transformation.svg
+|-- SELLER_SETUP.md
 |-- index.html
 |-- script.js
 |-- styles.css
@@ -21,12 +26,12 @@ iron-standard-fitness/
 
 1. Replace `assets/iron-standard-logo.svg` with your final logo. Keep the same filename or
    update the two image paths in `index.html`.
-2. In the quiz section of `index.html`, replace the placeholder `iframe` with the free
-   embed code from Google Forms or Tally.
-3. Replace each program button's `href="#"` with its Gumroad product URL, such as
-   `https://gumroad.com/l/productID`.
-4. To use Gumroad checkout pop-ups, add `class="gumroad-button"` to each Gumroad link and
-   uncomment the Gumroad script near the bottom of `index.html`.
+2. The free Tally quiz embed is configured in `index.html`. Quiz responses appear in the
+   Tally dashboard.
+3. The four published Gumroad product URLs are configured in `STORE_CONFIG` in
+   `script.js`. Gumroad captures the buyer's checkout email and delivers the paid PDF.
+4. If you add another product later, use the same `STORE_CONFIG` pattern. A product
+   button remains disabled with a **Coming Soon** label until its matching URL exists.
 5. Replace the placeholder testimonials with real quotes only after getting each client's
    permission.
 6. Replace the example support email, social profile links, privacy policy link, and terms
@@ -76,10 +81,11 @@ https://YOUR_USERNAME.github.io/iron-standard-fitness/
 
 ## Keep the Site Free
 
-- Store images, icons, and downloadable assets inside this repository.
+- Store public website images and icons inside this repository. Keep paid product files
+  private and deliver them through Gumroad.
 - Use GitHub Pages for hosting and HTTPS.
 - Use Google Forms or Tally's free tier for the quiz instead of building a backend.
-- Use Gumroad product links for checkout. Review Gumroad's current transaction pricing
+- Use Gumroad product links for checkout and digital delivery. Review Gumroad's current transaction pricing
   before selling products.
 - Keep the Google Fonts links in `index.html`; Montserrat and Lato are free to use.
 

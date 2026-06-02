@@ -16,6 +16,7 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
+    <script src="https://tally.so/widgets/embed.js"></script>
 
     <!--
       Optional: add the free Google Analytics tag here after creating a GA4 property.
@@ -100,36 +101,30 @@
 
           <div class="quiz-frame-wrapper">
             <!--
-              Replace the iframe below with the embed code from your free Google Form or
-              Tally form. For Google Forms, choose Send > Embed HTML and paste that iframe.
-              For Tally, choose Share > Embed and paste the generated iframe.
+              This free Tally standard embed captures quiz submissions in the Tally dashboard.
+              The email question is used for lead follow-up. Marketing consent is optional.
             -->
             <iframe
               class="quiz-frame"
-              title="Iron Standard fitness quiz placeholder"
+              data-tally-src="https://tally.so/embed/EkMYR4?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              src="https://tally.so/embed/EkMYR4?alignLeft=1&hideTitle=1&transparentBackground=1"
+              title="Iron Standard 60-Second Fitness Quiz"
               loading="lazy"
-              srcdoc="
-                <!DOCTYPE html>
-                <html lang='en'>
-                  <head>
-                    <meta name='viewport' content='width=device-width, initial-scale=1'>
-                    <style>
-                      body { display:grid; min-height:100vh; place-items:center; margin:0; padding:24px; background:#17191c; color:#eef0f2; font-family:Arial,sans-serif; text-align:center; box-sizing:border-box; }
-                      div { max-width:520px; }
-                      strong { display:block; color:#d73d44; font-size:20px; margin-bottom:10px; }
-                      p { color:#b4bac1; line-height:1.6; margin:0; }
-                    </style>
-                  </head>
-                  <body>
-                    <div>
-                      <strong>Your fitness quiz goes here</strong>
-                      <p>Replace this placeholder iframe with your Google Forms or Tally embed code.</p>
-                    </div>
-                  </body>
-                </html>
-              "
+              width="100%"
+              height="560"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
             ></iframe>
           </div>
+          <p class="quiz-privacy">
+            Your quiz response is captured securely through Tally. Marketing emails are optional
+            and require your separate consent inside the quiz.
+          </p>
+          <p class="quiz-success" hidden>
+            Quiz received. Review the programs below and choose the starting point that fits your
+            schedule.
+          </p>
         </div>
       </section>
 
@@ -145,6 +140,14 @@
 
           <div class="program-grid">
             <article class="program-card">
+              <img
+                class="program-art"
+                src="assets/product-reset.svg"
+                alt=""
+                width="640"
+                height="360"
+                loading="lazy"
+              >
               <p class="card-label">Quick Start</p>
               <h3>30-Day Iron Reset</h3>
               <p class="card-description">A focused reset for building momentum and better habits.</p>
@@ -153,11 +156,20 @@
                 <li>Simple nutrition guide</li>
                 <li>Weekly progress tracker</li>
               </ul>
-              <!-- Replace href="#" with the Gumroad product link, such as https://gumroad.com/l/productID -->
-              <a class="button button-secondary" href="#">Buy Now</a>
+              <p class="program-price">$19 <span>one-time</span></p>
+              <!-- Gumroad product URL is applied from STORE_CONFIG in script.js after seller setup. -->
+              <a class="button button-secondary product-button" href="#" data-product="reset">Coming Soon</a>
             </article>
 
             <article class="program-card program-card-featured">
+              <img
+                class="program-art"
+                src="assets/product-transformation.svg"
+                alt=""
+                width="640"
+                height="360"
+                loading="lazy"
+              >
               <p class="card-label">Most Popular</p>
               <h3>8-Week Iron Standard Transformation</h3>
               <p class="card-description">The complete step-by-step plan for visible, sustainable results.</p>
@@ -166,11 +178,20 @@
                 <li>Flexible meal planning system</li>
                 <li>Habit and measurement trackers</li>
               </ul>
-              <!-- Replace href="#" with the Gumroad product link, such as https://gumroad.com/l/productID -->
-              <a class="button button-primary" href="#">Buy Now</a>
+              <p class="program-price">$49 <span>one-time</span></p>
+              <!-- Gumroad product URL is applied from STORE_CONFIG in script.js after seller setup. -->
+              <a class="button button-primary product-button" href="#" data-product="transformation">Coming Soon</a>
             </article>
 
             <article class="program-card">
+              <img
+                class="program-art"
+                src="assets/product-toolkit.svg"
+                alt=""
+                width="640"
+                height="360"
+                loading="lazy"
+              >
               <p class="card-label">Self-Guided</p>
               <h3>Complete Transformation Toolkit</h3>
               <p class="card-description">Practical resources to organize training, meals, and progress.</p>
@@ -179,11 +200,20 @@
                 <li>Nutrition checklists</li>
                 <li>Printable tracking sheets</li>
               </ul>
-              <!-- Replace href="#" with the Gumroad product link, such as https://gumroad.com/l/productID -->
-              <a class="button button-secondary" href="#">Buy Now</a>
+              <p class="program-price">$15 <span>one-time</span></p>
+              <!-- Gumroad product URL is applied from STORE_CONFIG in script.js after seller setup. -->
+              <a class="button button-secondary product-button" href="#" data-product="toolkit">Coming Soon</a>
             </article>
 
             <article class="program-card">
+              <img
+                class="program-art"
+                src="assets/product-club.svg"
+                alt=""
+                width="640"
+                height="360"
+                loading="lazy"
+              >
               <p class="card-label">Ongoing Support</p>
               <h3>Iron Training Club</h3>
               <p class="card-description">Fresh programming and accountability for long-term consistency.</p>
@@ -192,10 +222,15 @@
                 <li>Member-only resources</li>
                 <li>Ongoing accountability prompts</li>
               </ul>
-              <!-- Replace href="#" with the Gumroad product link, such as https://gumroad.com/l/productID -->
-              <a class="button button-secondary" href="#">Buy Now</a>
+              <p class="program-price">$12 <span>per month</span></p>
+              <!-- Gumroad product URL is applied from STORE_CONFIG in script.js after seller setup. -->
+              <a class="button button-secondary product-button" href="#" data-product="club">Coming Soon</a>
             </article>
           </div>
+          <p class="checkout-note">
+            Checkout and secure digital delivery are handled by Gumroad. Purchasers receive their
+            download access by email.
+          </p>
         </div>
       </section>
 
@@ -326,13 +361,10 @@
     </footer>
 
     <!--
-      Optional Gumroad checkout pop-up integration:
-      1. Replace each product button href="#" with your Gumroad product URL:
-         https://gumroad.com/l/productID
-      2. Add class="gumroad-button" to each Gumroad anchor.
-      3. Uncomment the free Gumroad script below before the closing body tag.
-
-      <script src="https://gumroad.com/js/gumroad.js"></script>
+      Gumroad setup:
+      Paste each published Gumroad product URL into STORE_CONFIG in script.js.
+      Direct Gumroad links keep checkout reliable on a static GitHub Pages site.
+      Gumroad records the purchaser email entered during checkout and emails product access.
     -->
     <script src="script.js"></script>
   </body>
