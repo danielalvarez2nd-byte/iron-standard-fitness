@@ -570,7 +570,7 @@ figcaption {
   font-weight: 800;
 }
 
-.guarantee {
+.support-policy {
   margin-bottom: 4.5rem;
   padding: 1.5rem;
   border: 1px solid var(--color-accent-dark);
@@ -578,7 +578,7 @@ figcaption {
   background: linear-gradient(145deg, rgba(184, 41, 49, 0.18), rgba(130, 28, 34, 0.06));
 }
 
-.guarantee p:last-child {
+.support-policy p:last-child {
   max-width: 700px;
   margin-bottom: 0;
   color: var(--color-text-muted);
