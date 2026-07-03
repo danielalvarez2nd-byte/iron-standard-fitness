@@ -1,127 +1,100 @@
-# Iron Standard Fitness Landing Page
+# D.H. Tag & Time Website
 
-A fast, mobile-first static landing page for Iron Standard Fitness. It uses plain HTML5,
-CSS3, and a few lines of vanilla JavaScript. There are no paid dependencies, frameworks,
-build tools, or backend services.
+This repository now contains the D.H. Tag & Time starter website. It is a fast static site built with plain HTML, CSS, and JavaScript so it is easy to edit and simple to host with GitHub Pages.
 
-## Project Structure
+## What the site does
+
+- Sends handmade goods buyers to Etsy.
+- Clearly separates handmade laser goods from watches and watch accessories.
+- Features metal scratch art as the lead handmade product.
+- Lists custom watch dials as Coming Soon.
+- Uses message buttons for custom orders and watch questions.
+- Uses a cleaner, more serious D.H. Tag & Time logo direction.
+- Keeps the brand clean modern, but still North Jersey proud.
+
+## Files
+
+- `index.html` - Main website content and structure.
+- `styles.css` - Colors, layout, mobile design, and visual styling.
+- `script.js` - Menu behavior, scroll effects, product rendering, and email message form.
+- `site-config.js` - The easiest file to edit first.
+- `assets/logo-mark.svg` - Starter logo mark.
+- `assets/favicon.svg` - Browser icon.
+- `assets/social-card.svg` - Social sharing preview.
+- `robots.txt` and `sitemap.xml` - Basic search engine files.
+
+## Edit this first
+
+Open `site-config.js` and replace these placeholders:
+
+```js
+etsyUrl: 'https://www.etsy.com/shop/YOUR_SHOP_NAME',
+messageUrl: 'mailto:hello@example.com?subject=Custom%20D.H.%20Tag%20%26%20Time%20Order',
+watchMessageUrl: 'mailto:hello@example.com?subject=Watch%20Inventory%20Question',
+instagramUrl: '#',
+facebookUrl: '#',
+```
+
+Good options for `messageUrl` include an email address, SMS link, Etsy custom-order link, Instagram profile, or Facebook Messenger link.
+
+## Product edits
+
+Most product text is controlled in `site-config.js`:
+
+- `featuredHandmade` controls metal scratch art, pet keepsakes, and metal business cards.
+- `watchGoods` controls available watches, watch accessories, and custom watch dials.
+
+Keep handmade Etsy goods and watches separate so buyers understand the difference immediately.
+
+## Add product photos
+
+1. Upload product photos into the `assets` folder.
+2. In `index.html`, replace a placeholder art block like this:
+
+```html
+<div class='product-art art-metal'></div>
+```
+
+with this:
+
+```html
+<img class='product-photo' src='assets/my-product-photo.jpg' alt='Custom metal scratch art with pet name'>
+```
+
+Then add this to `styles.css`:
+
+```css
+.product-photo {
+  width: 100%;
+  height: 166px;
+  object-fit: cover;
+  border-radius: 22px;
+  margin-bottom: 20px;
+}
+```
+
+## GitHub Pages
+
+To publish the site:
+
+1. Open the repository on GitHub.
+2. Go to Settings, then Pages.
+3. Under Build and deployment, choose Deploy from a branch.
+4. Select the `main` branch and `/ (root)` folder.
+5. Save and wait a few minutes.
+
+The default GitHub Pages URL should be:
 
 ```text
-iron-standard-fitness/
-|-- assets/
-|   |-- hero-grid.svg
-|   |-- iron-standard-logo.svg
-|   |-- product-club.svg
-|   |-- product-reset.svg
-|   |-- social-preview.png
-|   |-- product-toolkit.svg
-|   `-- product-transformation.svg
-|-- SELLER_SETUP.md
-|-- robots.txt
-|-- sitemap.xml
-|-- index.html
-|-- privacy.html
-|-- script.js
-|-- start.html
-|-- styles.css
-|-- terms.html
-`-- README.md
+https://danielalvarez2nd-byte.github.io/iron-standard-fitness/
 ```
 
-## Customize the Site
+You can rename the repository later if you want the URL to say `dh-tag-time` instead of `iron-standard-fitness`.
 
-1. Replace `assets/iron-standard-logo.svg` with your final logo. Keep the same filename or
-   update the two image paths in `index.html`.
-2. The free Tally quiz embed is configured in `index.html`. Quiz responses appear in the
-   Tally dashboard.
-3. The four published Gumroad product URLs are set directly on the product buttons in
-   `index.html` and mirrored in `STORE_CONFIG` in `script.js`. Gumroad captures the
-   buyer's checkout email and delivers the paid PDF.
-4. If you add another product later, use the same `STORE_CONFIG` pattern. A product
-   button remains disabled with a **Coming Soon** label until its matching URL exists.
-5. Replace the placeholder testimonials with real quotes only after getting each client's
-   permission.
-6. Review `privacy.html` and `terms.html` with a qualified professional before relying on
-   them for a commercial launch.
-7. Replace the example support email in the footer when you have the real inbox ready.
-8. Use `start.html` as a short link-in-bio page for Instagram, TikTok, Facebook, and QR
-   flyers. It points to the quiz, top offer, starter offer, and Gumroad storefront.
-9. `sitemap.xml`, `robots.txt`, and the Open Graph/Twitter metadata help search engines
-   and social platforms understand and preview the site.
+## Recommended next upgrades
 
-## Deploy Free With GitHub Pages
-
-### 1. Create a GitHub Repository
-
-1. Sign in at [github.com](https://github.com).
-2. Click **New repository**.
-3. Name it `iron-standard-fitness`.
-4. Keep the repository public so GitHub Pages hosting remains simple and free.
-5. Click **Create repository**.
-
-### 2. Push This Project to GitHub
-
-Install [Git](https://git-scm.com/downloads) if it is not already available. Open a
-terminal in this project folder and run:
-
-```bash
-git init
-git add .
-git commit -m "Create Iron Standard Fitness landing page"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/iron-standard-fitness.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` with your GitHub username. You can also upload the files through
-the GitHub website if you prefer not to use Git.
-
-### 3. Enable GitHub Pages
-
-1. Open your repository on GitHub.
-2. Go to **Settings** and select **Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and the `/ (root)` folder.
-5. Click **Save**.
-6. Wait a few minutes for the first deployment to finish.
-
-Your site will be available over free HTTPS at:
-
-```text
-https://YOUR_USERNAME.github.io/iron-standard-fitness/
-```
-
-## Keep the Site Free
-
-- Store public website images and icons inside this repository. Keep paid product files
-  private and deliver them through Gumroad.
-- Use GitHub Pages for hosting and HTTPS.
-- Use Google Forms or Tally's free tier for the quiz instead of building a backend.
-- Use Gumroad product links for checkout and digital delivery. Review Gumroad's current transaction pricing
-  before selling products.
-- Keep the Google Fonts links in `index.html`; Montserrat and Lato are free to use.
-
-## Optional Enhancements
-
-### Button Animation
-
-The button hover transitions live in `.button`, `.button:hover`, and `.button:focus-visible`
-inside `styles.css`. Adjust the `transform`, `box-shadow`, or timing values there to tune
-the interaction.
-
-### Google Analytics
-
-Create a free Google Analytics 4 property, copy its Measurement ID, then uncomment the
-Google Analytics snippet in the `<head>` of `index.html`. Replace `G-XXXXXXXXXX` with your
-Measurement ID.
-
-## Local Preview
-
-Because the project is static, you can open `index.html` directly in a browser. You can
-also use a simple local web server if you already have Python installed:
-
-```bash
-python -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
+- Replace placeholders with real product photos.
+- Add your real Etsy shop URL.
+- Replace the email placeholder with your preferred message path.
+- Add a dedicated watch inventory page if the watch side grows.
+- Create a final logo suite with horizontal, square, and icon-only versions.
