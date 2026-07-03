@@ -1,9 +1,0 @@
-<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="640" height="360" fill="#111316"/>
-  <path d="M0 0H640V12H0V0Z" fill="#B82931"/>
-  <path d="M432 0L640 208V360H568L318 110L432 0Z" fill="#B82931" opacity=".13"/>
-  <text x="34" y="74" fill="#D63B43" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">IRON STANDARD</text>
-  <text x="34" y="163" fill="#F2F3F5" font-family="Arial, sans-serif" font-size="54" font-weight="800">30-DAY</text>
-  <text x="34" y="222" fill="#F2F3F5" font-family="Arial, sans-serif" font-size="54" font-weight="800">IRON RESET</text>
-  <text x="36" y="285" fill="#AEB4BC" font-family="Arial, sans-serif" font-size="20">Quick start guide</text>
-</svg>
