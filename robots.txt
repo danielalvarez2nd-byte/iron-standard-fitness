@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /iron-standard-fitness/
+Allow: /
 
 Sitemap: https://danielalvarez2nd-byte.github.io/iron-standard-fitness/sitemap.xml
